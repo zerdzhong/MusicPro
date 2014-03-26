@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1711116718DC627000383E8E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1711116618DC627000383E8E /* MainViewController.m */; };
-		1711117118DC664A00383E8E /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1711116918DC664A00383E8E /* background.jpg */; };
 		1711117218DC664A00383E8E /* buttonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711116A18DC664A00383E8E /* buttonBackground.png */; };
 		1711117318DC664A00383E8E /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711116B18DC664A00383E8E /* pause.png */; };
 		1711117418DC664A00383E8E /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711116C18DC664A00383E8E /* play.png */; };
@@ -18,6 +16,14 @@
 		1711117818DC664A00383E8E /* sliderBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711117018DC664A00383E8E /* sliderBack.png */; };
 		1711117B18DC979900383E8E /* nav-lists.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711117918DC979900383E8E /* nav-lists.png */; };
 		1711117C18DC979900383E8E /* nav-lists@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711117A18DC979900383E8E /* nav-lists@2x.png */; };
+		1711118818E194F400383E8E /* TWTSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1711118618E194F400383E8E /* TWTSideMenuViewController.m */; };
+		1711118B18E1955200383E8E /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1711118A18E1955200383E8E /* MenuViewController.m */; };
+		1711118E18E195C800383E8E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1711118D18E195C800383E8E /* MainViewController.m */; };
+		1711119018E1A86900383E8E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711118F18E1A86900383E8E /* background.png */; };
+		1711119318E1AF4C00383E8E /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711119118E1AF4C00383E8E /* search.png */; };
+		1711119418E1AF4C00383E8E /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711119218E1AF4C00383E8E /* search@2x.png */; };
+		1711119718E1B06E00383E8E /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711119518E1B06E00383E8E /* menu.png */; };
+		1711119818E1B06E00383E8E /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711119618E1B06E00383E8E /* menu@2x.png */; };
 		182E640718DBC5E9006F6A3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182E640618DBC5E9006F6A3A /* Foundation.framework */; };
 		182E640918DBC5E9006F6A3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182E640818DBC5E9006F6A3A /* CoreGraphics.framework */; };
 		182E640B18DBC5E9006F6A3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182E640A18DBC5E9006F6A3A /* UIKit.framework */; };
@@ -43,9 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1711116518DC627000383E8E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		1711116618DC627000383E8E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		1711116918DC664A00383E8E /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		1711116A18DC664A00383E8E /* buttonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonBackground.png; sourceTree = "<group>"; };
 		1711116B18DC664A00383E8E /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		1711116C18DC664A00383E8E /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
@@ -55,6 +58,17 @@
 		1711117018DC664A00383E8E /* sliderBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderBack.png; sourceTree = "<group>"; };
 		1711117918DC979900383E8E /* nav-lists.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-lists.png"; sourceTree = "<group>"; };
 		1711117A18DC979900383E8E /* nav-lists@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-lists@2x.png"; sourceTree = "<group>"; };
+		1711118618E194F400383E8E /* TWTSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTSideMenuViewController.m; sourceTree = "<group>"; };
+		1711118718E194F400383E8E /* TWTSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTSideMenuViewController.h; sourceTree = "<group>"; };
+		1711118918E1955200383E8E /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		1711118A18E1955200383E8E /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		1711118C18E195C800383E8E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		1711118D18E195C800383E8E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		1711118F18E1A86900383E8E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		1711119118E1AF4C00383E8E /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		1711119218E1AF4C00383E8E /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
+		1711119518E1B06E00383E8E /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		1711119618E1B06E00383E8E /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		182E640318DBC5E9006F6A3A /* MusicPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		182E640618DBC5E9006F6A3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		182E640818DBC5E9006F6A3A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,6 +114,10 @@
 		1711116318DC625900383E8E /* General */ = {
 			isa = PBXGroup;
 			children = (
+				1711118C18E195C800383E8E /* MainViewController.h */,
+				1711118D18E195C800383E8E /* MainViewController.m */,
+				1711118918E1955200383E8E /* MenuViewController.h */,
+				1711118A18E1955200383E8E /* MenuViewController.m */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -114,9 +132,13 @@
 		1711116818DC664A00383E8E /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				1711119518E1B06E00383E8E /* menu.png */,
+				1711119618E1B06E00383E8E /* menu@2x.png */,
+				1711119118E1AF4C00383E8E /* search.png */,
+				1711119218E1AF4C00383E8E /* search@2x.png */,
+				1711118F18E1A86900383E8E /* background.png */,
 				1711117918DC979900383E8E /* nav-lists.png */,
 				1711117A18DC979900383E8E /* nav-lists@2x.png */,
-				1711116918DC664A00383E8E /* background.jpg */,
 				1711116A18DC664A00383E8E /* buttonBackground.png */,
 				1711116B18DC664A00383E8E /* pause.png */,
 				1711116C18DC664A00383E8E /* play.png */,
@@ -126,6 +148,15 @@
 				1711117018DC664A00383E8E /* sliderBack.png */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		1711118518E194E000383E8E /* OpenSource */ = {
+			isa = PBXGroup;
+			children = (
+				1711118718E194F400383E8E /* TWTSideMenuViewController.h */,
+				1711118618E194F400383E8E /* TWTSideMenuViewController.m */,
+			);
+			path = OpenSource;
 			sourceTree = "<group>";
 		};
 		182E63FA18DBC5E9006F6A3A = {
@@ -163,11 +194,10 @@
 			children = (
 				182E641518DBC5E9006F6A3A /* AppDelegate.h */,
 				182E641618DBC5E9006F6A3A /* AppDelegate.m */,
-				1711116518DC627000383E8E /* MainViewController.h */,
-				1711116618DC627000383E8E /* MainViewController.m */,
 				1711116318DC625900383E8E /* General */,
 				1711116418DC626300383E8E /* Model */,
 				1711116818DC664A00383E8E /* Image */,
+				1711118518E194E000383E8E /* OpenSource */,
 				182E641818DBC5E9006F6A3A /* Images.xcassets */,
 				182E640D18DBC5E9006F6A3A /* Supporting Files */,
 			);
@@ -278,16 +308,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1711117118DC664A00383E8E /* background.jpg in Resources */,
 				182E641118DBC5E9006F6A3A /* InfoPlist.strings in Resources */,
+				1711119018E1A86900383E8E /* background.png in Resources */,
 				1711117C18DC979900383E8E /* nav-lists@2x.png in Resources */,
 				1711117318DC664A00383E8E /* pause.png in Resources */,
 				1711117818DC664A00383E8E /* sliderBack.png in Resources */,
 				1711117B18DC979900383E8E /* nav-lists.png in Resources */,
 				182E641918DBC5E9006F6A3A /* Images.xcassets in Resources */,
 				1711117618DC664A00383E8E /* quite.png in Resources */,
+				1711119318E1AF4C00383E8E /* search.png in Resources */,
 				1711117218DC664A00383E8E /* buttonBackground.png in Resources */,
+				1711119418E1AF4C00383E8E /* search@2x.png in Resources */,
+				1711119718E1B06E00383E8E /* menu.png in Resources */,
 				1711117518DC664A00383E8E /* progress.png in Resources */,
+				1711119818E1B06E00383E8E /* menu@2x.png in Resources */,
 				1711117718DC664A00383E8E /* slider.png in Resources */,
 				1711117418DC664A00383E8E /* play.png in Resources */,
 			);
@@ -308,8 +342,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1711118B18E1955200383E8E /* MenuViewController.m in Sources */,
 				182E641718DBC5E9006F6A3A /* AppDelegate.m in Sources */,
-				1711116718DC627000383E8E /* MainViewController.m in Sources */,
+				1711118818E194F400383E8E /* TWTSideMenuViewController.m in Sources */,
+				1711118E18E195C800383E8E /* MainViewController.m in Sources */,
 				182E641318DBC5E9006F6A3A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

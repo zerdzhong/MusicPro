@@ -8,20 +8,36 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "MenuVIewController.h"
+
+@interface AppDelegate ()
+
+@property (nonatomic, strong) TWTSideMenuViewController *sideMenuViewController;
+@property (nonatomic, strong) MainViewController *mainViewController;
+@property (nonatomic, strong) MenuViewController *menuViewController;
+
+@end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    self.menuViewController = [[MenuViewController alloc] initWithNibName:nil bundle:nil];
+    self.mainViewController = [[MainViewController alloc] initWithNibName:nil bundle:nil];
+    
+    self.sideMenuViewController = [[TWTSideMenuViewController alloc] initWithMenuViewController:self.menuViewController mainViewController:[[UINavigationController alloc] initWithRootViewController:self.mainViewController]];
+    self.sideMenuViewController.shadowColor = [UIColor blackColor];
+    self.sideMenuViewController.edgeOffset = (UIOffset) { .horizontal = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? 18.0f : 0.0f };
+    self.sideMenuViewController.zoomScale = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? 0.5634f : 0.85f;
+    self.sideMenuViewController.delegate = self;
+    self.window.rootViewController = self.sideMenuViewController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
-    
-    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:[[MainViewController alloc]init]];
-    
-    self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     return YES;
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
