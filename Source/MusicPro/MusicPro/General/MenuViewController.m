@@ -79,7 +79,7 @@
     menuTableView.dataSource = self;
     menuTableView.backgroundColor = [UIColor clearColor];
     menuTableView.separatorColor = [UIColor clearColor];
-    menuTableView.pagingEnabled = NO;
+    menuTableView.scrollEnabled = NO;
     self.menuTitles = @[@"home",@"lists",@"setting"];
     [self.view addSubview:menuTableView];
     
@@ -190,7 +190,7 @@
 }
 
 #pragma -mark 
-#pragma -mark UITableViewDelegate && UITableViewDataSource
+#pragma -mark UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -209,7 +209,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
-    cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.backgroundColor = [UIColor clearColor];
     cell.textLabel.text = [self.menuTitles objectAtIndex:indexPath.row];
     cell.textLabel.textColor = [UIColor whiteColor];
@@ -217,9 +217,29 @@
     return cell;
 }
 
+#pragma -mark 
+#pragma -mark UITableViewDelegate
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 44;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.row) {
+        case 0:
+            //to-do
+            break;
+        case 1:
+            //to-do
+            break;
+        case 2:
+            //to-do
+            break;
+        default:
+            break;
+    }
 }
 
 @end
