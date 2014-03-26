@@ -14,8 +14,8 @@
 		1711117618DC664A00383E8E /* quite.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711116E18DC664A00383E8E /* quite.png */; };
 		1711117718DC664A00383E8E /* slider.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711116F18DC664A00383E8E /* slider.png */; };
 		1711117818DC664A00383E8E /* sliderBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711117018DC664A00383E8E /* sliderBack.png */; };
-		1711117B18DC979900383E8E /* nav-lists.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711117918DC979900383E8E /* nav-lists.png */; };
-		1711117C18DC979900383E8E /* nav-lists@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711117A18DC979900383E8E /* nav-lists@2x.png */; };
+		1711117B18DC979900383E8E /* lists.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711117918DC979900383E8E /* lists.png */; };
+		1711117C18DC979900383E8E /* lists@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711117A18DC979900383E8E /* lists@2x.png */; };
 		1711118818E194F400383E8E /* TWTSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1711118618E194F400383E8E /* TWTSideMenuViewController.m */; };
 		1711118B18E1955200383E8E /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1711118A18E1955200383E8E /* MenuViewController.m */; };
 		1711118E18E195C800383E8E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1711118D18E195C800383E8E /* MainViewController.m */; };
@@ -36,6 +36,8 @@
 		182E642218DBC5E9006F6A3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182E640A18DBC5E9006F6A3A /* UIKit.framework */; };
 		182E642A18DBC5E9006F6A3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 182E642818DBC5E9006F6A3A /* InfoPlist.strings */; };
 		182E642C18DBC5E9006F6A3A /* MusicProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E642B18DBC5E9006F6A3A /* MusicProTests.m */; };
+		1852474F18E2B491009AA2E9 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 1852474C18E2B491009AA2E9 /* UIImage+ImageEffects.m */; };
+		1852475018E2B491009AA2E9 /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1852474E18E2B491009AA2E9 /* UIImageView+LBBlurredImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +58,8 @@
 		1711116E18DC664A00383E8E /* quite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quite.png; sourceTree = "<group>"; };
 		1711116F18DC664A00383E8E /* slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slider.png; sourceTree = "<group>"; };
 		1711117018DC664A00383E8E /* sliderBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderBack.png; sourceTree = "<group>"; };
-		1711117918DC979900383E8E /* nav-lists.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-lists.png"; sourceTree = "<group>"; };
-		1711117A18DC979900383E8E /* nav-lists@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-lists@2x.png"; sourceTree = "<group>"; };
+		1711117918DC979900383E8E /* lists.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lists.png; sourceTree = "<group>"; };
+		1711117A18DC979900383E8E /* lists@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lists@2x.png"; sourceTree = "<group>"; };
 		1711118618E194F400383E8E /* TWTSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTSideMenuViewController.m; sourceTree = "<group>"; };
 		1711118718E194F400383E8E /* TWTSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTSideMenuViewController.h; sourceTree = "<group>"; };
 		1711118918E1955200383E8E /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
@@ -85,6 +87,10 @@
 		182E642718DBC5E9006F6A3A /* MusicProTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MusicProTests-Info.plist"; sourceTree = "<group>"; };
 		182E642918DBC5E9006F6A3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		182E642B18DBC5E9006F6A3A /* MusicProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicProTests.m; sourceTree = "<group>"; };
+		1852474B18E2B491009AA2E9 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		1852474C18E2B491009AA2E9 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		1852474D18E2B491009AA2E9 /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
+		1852474E18E2B491009AA2E9 /* UIImageView+LBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LBBlurredImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +143,8 @@
 				1711119118E1AF4C00383E8E /* search.png */,
 				1711119218E1AF4C00383E8E /* search@2x.png */,
 				1711118F18E1A86900383E8E /* background.png */,
-				1711117918DC979900383E8E /* nav-lists.png */,
-				1711117A18DC979900383E8E /* nav-lists@2x.png */,
+				1711117918DC979900383E8E /* lists.png */,
+				1711117A18DC979900383E8E /* lists@2x.png */,
 				1711116A18DC664A00383E8E /* buttonBackground.png */,
 				1711116B18DC664A00383E8E /* pause.png */,
 				1711116C18DC664A00383E8E /* play.png */,
@@ -153,6 +159,10 @@
 		1711118518E194E000383E8E /* OpenSource */ = {
 			isa = PBXGroup;
 			children = (
+				1852474B18E2B491009AA2E9 /* UIImage+ImageEffects.h */,
+				1852474C18E2B491009AA2E9 /* UIImage+ImageEffects.m */,
+				1852474D18E2B491009AA2E9 /* UIImageView+LBBlurredImage.h */,
+				1852474E18E2B491009AA2E9 /* UIImageView+LBBlurredImage.m */,
 				1711118718E194F400383E8E /* TWTSideMenuViewController.h */,
 				1711118618E194F400383E8E /* TWTSideMenuViewController.m */,
 			);
@@ -310,10 +320,10 @@
 			files = (
 				182E641118DBC5E9006F6A3A /* InfoPlist.strings in Resources */,
 				1711119018E1A86900383E8E /* background.png in Resources */,
-				1711117C18DC979900383E8E /* nav-lists@2x.png in Resources */,
+				1711117C18DC979900383E8E /* lists@2x.png in Resources */,
 				1711117318DC664A00383E8E /* pause.png in Resources */,
 				1711117818DC664A00383E8E /* sliderBack.png in Resources */,
-				1711117B18DC979900383E8E /* nav-lists.png in Resources */,
+				1711117B18DC979900383E8E /* lists.png in Resources */,
 				182E641918DBC5E9006F6A3A /* Images.xcassets in Resources */,
 				1711117618DC664A00383E8E /* quite.png in Resources */,
 				1711119318E1AF4C00383E8E /* search.png in Resources */,
@@ -344,7 +354,9 @@
 			files = (
 				1711118B18E1955200383E8E /* MenuViewController.m in Sources */,
 				182E641718DBC5E9006F6A3A /* AppDelegate.m in Sources */,
+				1852474F18E2B491009AA2E9 /* UIImage+ImageEffects.m in Sources */,
 				1711118818E194F400383E8E /* TWTSideMenuViewController.m in Sources */,
+				1852475018E2B491009AA2E9 /* UIImageView+LBBlurredImage.m in Sources */,
 				1711118E18E195C800383E8E /* MainViewController.m in Sources */,
 				182E641318DBC5E9006F6A3A /* main.m in Sources */,
 			);

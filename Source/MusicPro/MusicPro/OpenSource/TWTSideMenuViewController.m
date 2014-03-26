@@ -192,7 +192,7 @@ static NSTimeInterval const kDefaultSwapAnimationClosedDuration = 0.35;
 - (CGAffineTransform)openTransformForView:(UIView *)view
 {
     CGFloat transformSize = self.zoomScale;
-    CGAffineTransform newTransform = CGAffineTransformTranslate(view.transform, view.bounds.size.width/4, self.edgeOffset.vertical);
+    CGAffineTransform newTransform = CGAffineTransformTranslate(view.transform, view.bounds.size.width/3, self.edgeOffset.vertical);
     return CGAffineTransformScale(newTransform, transformSize, transformSize);
 }
 

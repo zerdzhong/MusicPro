@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TWTSideMenuViewController.h"
 
-@interface MenuViewController : UIViewController
+@interface MenuViewController : UIViewController <UISearchBarDelegate,TWTSideMenuViewControllerDelegate,UITableViewDataSource,UITableViewDelegate>
 
 @end

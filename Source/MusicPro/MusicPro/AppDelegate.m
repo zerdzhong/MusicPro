@@ -67,4 +67,43 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma -mark TWTSideMenuViewControllerDelegate
+
+- (void)sideMenuViewControllerWillOpenMenu:(TWTSideMenuViewController *)sideMenuViewController
+{
+    if ([self.mainViewController respondsToSelector:@selector(sideMenuViewControllerWillOpenMenu:)]) {
+        [self.mainViewController sideMenuViewControllerWillOpenMenu:self.sideMenuViewController];
+    }
+    if ([self.menuViewController respondsToSelector:@selector(sideMenuViewControllerWillOpenMenu:)]) {
+        [self.menuViewController sideMenuViewControllerWillOpenMenu:self.sideMenuViewController];
+    }
+}
+- (void)sideMenuViewControllerDidOpenMenu:(TWTSideMenuViewController *)sideMenuViewController
+{
+    if ([self.mainViewController respondsToSelector:@selector(sideMenuViewControllerDidOpenMenu:)]) {
+        [self.mainViewController sideMenuViewControllerDidOpenMenu:self.sideMenuViewController];
+    }
+    if ([self.menuViewController respondsToSelector:@selector(sideMenuViewControllerDidOpenMenu:)]) {
+        [self.menuViewController sideMenuViewControllerDidOpenMenu:self.sideMenuViewController];
+    }
+}
+- (void)sideMenuViewControllerWillCloseMenu:(TWTSideMenuViewController *)sideMenuViewController
+{
+    if ([self.mainViewController respondsToSelector:@selector(sideMenuViewControllerWillCloseMenu:)]) {
+        [self.mainViewController sideMenuViewControllerWillCloseMenu:self.sideMenuViewController];
+    }
+    if ([self.menuViewController respondsToSelector:@selector(sideMenuViewControllerWillCloseMenu:)]) {
+        [self.menuViewController sideMenuViewControllerWillCloseMenu:self.sideMenuViewController];
+    }
+}
+- (void)sideMenuViewControllerDidCloseMenu:(TWTSideMenuViewController *)sideMenuViewController
+{
+    if ([self.mainViewController respondsToSelector:@selector(sideMenuViewControllerDidCloseMenu:)]) {
+        [self.mainViewController sideMenuViewControllerDidCloseMenu:self.sideMenuViewController];
+    }
+    if ([self.menuViewController respondsToSelector:@selector(sideMenuViewControllerDidCloseMenu:)]) {
+        [self.menuViewController sideMenuViewControllerDidCloseMenu:self.sideMenuViewController];
+    }
+}
+
 @end
