@@ -91,6 +91,7 @@
 		1852474C18E2B491009AA2E9 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		1852474D18E2B491009AA2E9 /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
 		1852474E18E2B491009AA2E9 /* UIImageView+LBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LBBlurredImage.m"; sourceTree = "<group>"; };
+		1852475318E3B210009AA2E9 /* ViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +121,7 @@
 		1711116318DC625900383E8E /* General */ = {
 			isa = PBXGroup;
 			children = (
+				1852475318E3B210009AA2E9 /* ViewUtils.h */,
 				1711118C18E195C800383E8E /* MainViewController.h */,
 				1711118D18E195C800383E8E /* MainViewController.m */,
 				1711118918E1955200383E8E /* MenuViewController.h */,

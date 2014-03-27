@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "TWTSideMenuViewController.h"
 
-@interface MainViewController : UIViewController <TWTSideMenuViewControllerDelegate>
+@interface MainViewController : UIViewController <TWTSideMenuViewControllerDelegate,UITableViewDataSource,UITableViewDataSource>
 
 @end
