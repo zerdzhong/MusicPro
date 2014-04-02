@@ -24,6 +24,8 @@
 		1711119418E1AF4C00383E8E /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711119218E1AF4C00383E8E /* search@2x.png */; };
 		1711119718E1B06E00383E8E /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711119518E1B06E00383E8E /* menu.png */; };
 		1711119818E1B06E00383E8E /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711119618E1B06E00383E8E /* menu@2x.png */; };
+		181D0D8418EBDC2D00F0E488 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D0D8318EBDC2D00F0E488 /* AudioStreamer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		181D0D8718EBDD7800F0E488 /* MusicPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D0D8618EBDD7800F0E488 /* MusicPlayerViewController.m */; };
 		182E640718DBC5E9006F6A3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182E640618DBC5E9006F6A3A /* Foundation.framework */; };
 		182E640918DBC5E9006F6A3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182E640818DBC5E9006F6A3A /* CoreGraphics.framework */; };
 		182E640B18DBC5E9006F6A3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182E640A18DBC5E9006F6A3A /* UIKit.framework */; };
@@ -38,6 +40,8 @@
 		182E642C18DBC5E9006F6A3A /* MusicProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E642B18DBC5E9006F6A3A /* MusicProTests.m */; };
 		1852474F18E2B491009AA2E9 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 1852474C18E2B491009AA2E9 /* UIImage+ImageEffects.m */; };
 		1852475018E2B491009AA2E9 /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1852474E18E2B491009AA2E9 /* UIImageView+LBBlurredImage.m */; };
+		1871B0F718EC0F6D0077E2BB /* MainListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1871B0F618EC0F6D0077E2BB /* MainListModel.m */; };
+		1871B0FA18EC12CF0077E2BB /* listDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1871B0F918EC12CF0077E2BB /* listDetailModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,10 @@
 		1711119218E1AF4C00383E8E /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
 		1711119518E1B06E00383E8E /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		1711119618E1B06E00383E8E /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		181D0D8218EBDC2D00F0E488 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
+		181D0D8318EBDC2D00F0E488 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
+		181D0D8518EBDD7800F0E488 /* MusicPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayerViewController.h; sourceTree = "<group>"; };
+		181D0D8618EBDD7800F0E488 /* MusicPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayerViewController.m; sourceTree = "<group>"; };
 		182E640318DBC5E9006F6A3A /* MusicPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		182E640618DBC5E9006F6A3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		182E640818DBC5E9006F6A3A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -92,6 +100,10 @@
 		1852474D18E2B491009AA2E9 /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
 		1852474E18E2B491009AA2E9 /* UIImageView+LBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LBBlurredImage.m"; sourceTree = "<group>"; };
 		1852475318E3B210009AA2E9 /* ViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtils.h; sourceTree = "<group>"; };
+		1871B0F518EC0F6D0077E2BB /* MainListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainListModel.h; sourceTree = "<group>"; };
+		1871B0F618EC0F6D0077E2BB /* MainListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainListModel.m; sourceTree = "<group>"; };
+		1871B0F818EC12CF0077E2BB /* listDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listDetailModel.h; sourceTree = "<group>"; };
+		1871B0F918EC12CF0077E2BB /* listDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = listDetailModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,15 +138,10 @@
 				1711118D18E195C800383E8E /* MainViewController.m */,
 				1711118918E1955200383E8E /* MenuViewController.h */,
 				1711118A18E1955200383E8E /* MenuViewController.m */,
+				181D0D8518EBDD7800F0E488 /* MusicPlayerViewController.h */,
+				181D0D8618EBDD7800F0E488 /* MusicPlayerViewController.m */,
 			);
 			path = General;
-			sourceTree = "<group>";
-		};
-		1711116418DC626300383E8E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		1711116818DC664A00383E8E /* Image */ = {
@@ -161,6 +168,8 @@
 		1711118518E194E000383E8E /* OpenSource */ = {
 			isa = PBXGroup;
 			children = (
+				181D0D8218EBDC2D00F0E488 /* AudioStreamer.h */,
+				181D0D8318EBDC2D00F0E488 /* AudioStreamer.m */,
 				1852474B18E2B491009AA2E9 /* UIImage+ImageEffects.h */,
 				1852474C18E2B491009AA2E9 /* UIImage+ImageEffects.m */,
 				1852474D18E2B491009AA2E9 /* UIImageView+LBBlurredImage.h */,
@@ -169,6 +178,17 @@
 				1711118618E194F400383E8E /* TWTSideMenuViewController.m */,
 			);
 			path = OpenSource;
+			sourceTree = "<group>";
+		};
+		181D0D8118EBDC0B00F0E488 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1871B0F518EC0F6D0077E2BB /* MainListModel.h */,
+				1871B0F618EC0F6D0077E2BB /* MainListModel.m */,
+				1871B0F818EC12CF0077E2BB /* listDetailModel.h */,
+				1871B0F918EC12CF0077E2BB /* listDetailModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		182E63FA18DBC5E9006F6A3A = {
@@ -207,9 +227,9 @@
 				182E641518DBC5E9006F6A3A /* AppDelegate.h */,
 				182E641618DBC5E9006F6A3A /* AppDelegate.m */,
 				1711116318DC625900383E8E /* General */,
-				1711116418DC626300383E8E /* Model */,
-				1711116818DC664A00383E8E /* Image */,
+				181D0D8118EBDC0B00F0E488 /* Model */,
 				1711118518E194E000383E8E /* OpenSource */,
+				1711116818DC664A00383E8E /* Image */,
 				182E641818DBC5E9006F6A3A /* Images.xcassets */,
 				182E640D18DBC5E9006F6A3A /* Supporting Files */,
 			);
@@ -356,11 +376,15 @@
 			files = (
 				1711118B18E1955200383E8E /* MenuViewController.m in Sources */,
 				182E641718DBC5E9006F6A3A /* AppDelegate.m in Sources */,
+				181D0D8718EBDD7800F0E488 /* MusicPlayerViewController.m in Sources */,
+				1871B0FA18EC12CF0077E2BB /* listDetailModel.m in Sources */,
 				1852474F18E2B491009AA2E9 /* UIImage+ImageEffects.m in Sources */,
+				1871B0F718EC0F6D0077E2BB /* MainListModel.m in Sources */,
 				1711118818E194F400383E8E /* TWTSideMenuViewController.m in Sources */,
 				1852475018E2B491009AA2E9 /* UIImageView+LBBlurredImage.m in Sources */,
 				1711118E18E195C800383E8E /* MainViewController.m in Sources */,
 				182E641318DBC5E9006F6A3A /* main.m in Sources */,
+				181D0D8418EBDC2D00F0E488 /* AudioStreamer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

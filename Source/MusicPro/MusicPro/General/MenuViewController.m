@@ -80,7 +80,7 @@
     menuTableView.backgroundColor = [UIColor clearColor];
     menuTableView.separatorColor = [UIColor clearColor];
     menuTableView.scrollEnabled = NO;
-    self.menuTitles = @[@"home",@"lists",@"setting"];
+    self.menuTitles = @[@"home",@"lists",@"setting",@"about"];
     [self.view addSubview:menuTableView];
     
 }
@@ -143,8 +143,7 @@
 }
 
 
-#pragma -mark 
-#pragma -mark 触摸事件响应
+#pragma mark- 触摸事件响应
 - (void)tapGestured:(id)sender
 {
     if ([self.searchBar isFirstResponder]) {
@@ -161,15 +160,13 @@
     }];
 }
 
-#pragma -mark
-#pragma -mark UISearchBarDelegate
+#pragma mark- UISearchBarDelegate
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
     
 }
 
-#pragma -mark
-#pragma -mark TWTSideMenuViewControllerDelegate
+#pragma mark- TWTSideMenuViewControllerDelegate
 - (void)sideMenuViewControllerWillOpenMenu:(TWTSideMenuViewController *)sideMenuViewController
 {
 
@@ -189,8 +186,7 @@
 
 }
 
-#pragma -mark 
-#pragma -mark UITableViewDataSource
+#pragma mark- UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -217,8 +213,7 @@
     return cell;
 }
 
-#pragma -mark 
-#pragma -mark UITableViewDelegate
+#pragma mark- UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
