@@ -11,6 +11,7 @@
 #import "MusicPlayerViewController.h"
 #import "MainViewController.h"
 #import "ViewUtils.h"
+#import "listDetailModel.h"
 
 @interface MainViewController ()
 
@@ -40,15 +41,23 @@
     self.listTableView.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
     self.listTableView.delegate = self;
     self.listTableView.dataSource = self;
+//    self.listTableView.editing = YES;
     [self.view addSubview:self.listTableView];
     
     self.arrayForTable = [[NSMutableArray alloc]init];
-    NSDictionary *listDic1 = @{@"name": @"ALL",@"songName" : @[@"1",@"2",@"3"],@"level" : @"0"};
-    NSDictionary *listDic2 = @{@"name": @"FAVURITE",@"songName" : @[@"a",@"b",@"c"],@"level" : @"0"};
-    NSDictionary *listDic3 = @{@"name": @"ROCK",@"songName" : @[@"A",@"B",@"C"],@"level" : @"0"};
-    [self.arrayForTable addObject:listDic1];
-    [self.arrayForTable addObject:listDic2];
-    [self.arrayForTable addObject:listDic3];
+    listDetailModel *list1 = [[listDetailModel alloc]initWithListName:@"ALL"
+                                                             andLevel:@"0"
+                                                             andArray:@[@"1",@"2",@"3"]];
+    listDetailModel *list2 = [[listDetailModel alloc]initWithListName:@"FAVURITE"
+                                                             andLevel:@"0"
+                                                             andArray:@[@"a",@"b",@"c"]];
+
+    listDetailModel *list3 = [[listDetailModel alloc]initWithListName:@"ROCK"
+                                                             andLevel:@"0"
+                                                             andArray:@[@"A",@"B",@"C"]];
+    [self.arrayForTable addObject:list1];
+    [self.arrayForTable addObject:list2];
+    [self.arrayForTable addObject:list3];
     
 }
 
@@ -91,9 +100,9 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-	
-	cell.textLabel.text=[[self.arrayForTable objectAtIndex:indexPath.row] valueForKey:@"name"];
-	[cell setIndentationLevel:[[[self.arrayForTable objectAtIndex:indexPath.row] valueForKey:@"level"] intValue]];
+	listDetailModel *list = (listDetailModel *)[self.arrayForTable objectAtIndex:indexPath.row];
+	cell.textLabel.text=list.name;
+	[cell setIndentationLevel:[list.level integerValue]];
 	
     return cell;
 }
@@ -102,43 +111,42 @@
 {
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	
-	NSDictionary *dic=[self.arrayForTable objectAtIndex:indexPath.row];
-	if([dic valueForKey:@"songName"]) {
-		NSArray *array=[dic valueForKey:@"songName"];
+	listDetailModel *detail=[self.arrayForTable objectAtIndex:indexPath.row];
+	if(detail.listNameArray != nil) {
 		
-		BOOL isAlreadyInserted=NO;
-		
-		for(NSDictionary *songDic in array ){
-			NSInteger index=[self.arrayForTable indexOfObjectIdenticalTo:songDic];
-			isAlreadyInserted=(index>0 && index!=NSIntegerMax);
-			if(isAlreadyInserted) break;
-		}
+		bool isAlreadyInserted = detail.isListShow;
 		
 		if(isAlreadyInserted) {
-			[self miniMizeThisRows:self.arrayForTable];
+            detail.isListShow = NO;
+			[self miniMizeThisRows:detail];
 		} else {
 			NSUInteger count = indexPath.row + 1;
 			NSMutableArray *arCells=[NSMutableArray array];
-			for(NSString *songName in array ) {
+			for(NSString *songName in detail.listNameArray ) {
 				[arCells addObject:[NSIndexPath indexPathForRow:count inSection:0]];
-				[self.arrayForTable insertObject:@{@"name": songName,@"level" : @"1"} atIndex:count++];
+                listDetailModel *insertList = [[listDetailModel alloc]initWithListName:songName
+                                                                             andLevel:@"1"
+                                                                             andArray:nil];
+				[self.arrayForTable insertObject:insertList atIndex:count++];
 			}
 			[tableView insertRowsAtIndexPaths:arCells withRowAnimation:UITableViewRowAnimationLeft];
+            detail.isListShow = YES;
 		}
 	}
 }
 
--(void)miniMizeThisRows:(NSArray*)array{
+-(void)miniMizeThisRows:(listDetailModel *)list{
 	
-	for(NSDictionary *dic in array ) {
-		NSUInteger indexToRemove=[self.arrayForTable indexOfObjectIdenticalTo:dic];
-		
-		if([self.arrayForTable indexOfObjectIdenticalTo:dic]!= NSNotFound) {
-			[self.arrayForTable removeObjectIdenticalTo:dic];
-            
-			[self.listTableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:indexToRemove inSection:0]]withRowAnimation:UITableViewRowAnimationRight];
-		}
-	}
+//	for(listDetailModel *list in self.arrayForTable) {
+//		NSUInteger indexToRemove=[self.arrayForTable indexOfObjectIdenticalTo:list];
+//        if ([array containsObject:list.name]) {
+//            [self.arrayForTable removeObjectIdenticalTo:list];
+    NSUInteger indexToRemove=[self.arrayForTable indexOfObjectIdenticalTo:list] + 1;
+    for (int i = 0; i < list.listNameArray.count ; i++) {
+        [self.arrayForTable removeObjectAtIndex:indexToRemove];
+        [self.listTableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:indexToRemove inSection:0]]withRowAnimation:UITableViewRowAnimationRight];
+    }
+    
 }
 
 

@@ -12,7 +12,12 @@
 
 @property (nonatomic, strong)NSString *name;
 @property (nonatomic, strong)NSString *level;
-@property (nonatomic, assign)BOOL *isListShow;
+@property (nonatomic, assign)bool isListShow;
 @property (nonatomic, strong)NSMutableArray *listNameArray;
+
+- (id)initWithListName:(NSString *)name
+              andLevel:(NSString *)level
+              andArray:(NSArray *)songNameList;
+
 
 @end

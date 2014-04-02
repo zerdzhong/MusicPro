@@ -10,4 +10,13 @@
 
 @implementation MainListModel
 
+- (id)initWithListDetailArray:(NSMutableArray *)array
+{
+    if (self = [super init]) {
+        //
+        self.listArray = array;
+    }
+    return self;
+}
+
 @end

@@ -10,4 +10,18 @@
 
 @implementation listDetailModel
 
+- (id)initWithListName:(NSString *)name
+              andLevel:(NSString *)level
+              andArray:(NSArray *)songNameList
+{
+    if (self = [super init]) {
+        //
+        self.level = level;
+        self.name = name;
+        self.listNameArray = [NSMutableArray arrayWithArray:songNameList];
+        self.isListShow = NO;
+    }
+    return self;
+}
+
 @end

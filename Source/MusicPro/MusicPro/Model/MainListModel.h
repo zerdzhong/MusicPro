@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic)NSMutableArray *listArray;
 
+- (id)initWithListDetailArray:(NSMutableArray *)array;
+
 @end
