@@ -28,6 +28,8 @@
 {
     [super viewDidLoad];
     
+
+
     //背景
     UIImageView *backgroundImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
     backgroundImageView.image = [UIImage imageNamed:@"background"];

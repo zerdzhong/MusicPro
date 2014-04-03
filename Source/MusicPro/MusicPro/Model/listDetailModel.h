@@ -11,12 +11,13 @@
 @interface listDetailModel : NSObject
 
 @property (nonatomic, strong)NSString *name;
-@property (nonatomic, strong)NSString *level;
+@property (nonatomic, strong)listDetailModel *superList;
+@property (nonatomic, assign)int level;
 @property (nonatomic, assign)bool isListShow;
 @property (nonatomic, strong)NSMutableArray *listNameArray;
 
 - (id)initWithListName:(NSString *)name
-              andLevel:(NSString *)level
+          andSuperList:(listDetailModel *)superList
               andArray:(NSArray *)songNameList;
 
 

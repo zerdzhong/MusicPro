@@ -24,6 +24,8 @@
 		1711119418E1AF4C00383E8E /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711119218E1AF4C00383E8E /* search@2x.png */; };
 		1711119718E1B06E00383E8E /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711119518E1B06E00383E8E /* menu.png */; };
 		1711119818E1B06E00383E8E /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1711119618E1B06E00383E8E /* menu@2x.png */; };
+		181787BB18ED4D1B0035B70C /* MusicInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181787BA18ED4D1B0035B70C /* MusicInfoCell.m */; };
+		181787BD18ED4D550035B70C /* MusicInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181787BC18ED4D550035B70C /* MusicInfoCell.xib */; };
 		181D0D8418EBDC2D00F0E488 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D0D8318EBDC2D00F0E488 /* AudioStreamer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		181D0D8718EBDD7800F0E488 /* MusicPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D0D8618EBDD7800F0E488 /* MusicPlayerViewController.m */; };
 		182E640718DBC5E9006F6A3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182E640618DBC5E9006F6A3A /* Foundation.framework */; };
@@ -75,6 +77,9 @@
 		1711119218E1AF4C00383E8E /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
 		1711119518E1B06E00383E8E /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		1711119618E1B06E00383E8E /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		181787B918ED4D1B0035B70C /* MusicInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicInfoCell.h; sourceTree = "<group>"; };
+		181787BA18ED4D1B0035B70C /* MusicInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicInfoCell.m; sourceTree = "<group>"; };
+		181787BC18ED4D550035B70C /* MusicInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicInfoCell.xib; sourceTree = "<group>"; };
 		181D0D8218EBDC2D00F0E488 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
 		181D0D8318EBDC2D00F0E488 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
 		181D0D8518EBDD7800F0E488 /* MusicPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayerViewController.h; sourceTree = "<group>"; };
@@ -140,6 +145,9 @@
 				1711118A18E1955200383E8E /* MenuViewController.m */,
 				181D0D8518EBDD7800F0E488 /* MusicPlayerViewController.h */,
 				181D0D8618EBDD7800F0E488 /* MusicPlayerViewController.m */,
+				181787B918ED4D1B0035B70C /* MusicInfoCell.h */,
+				181787BA18ED4D1B0035B70C /* MusicInfoCell.m */,
+				181787BC18ED4D550035B70C /* MusicInfoCell.xib */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -344,6 +352,7 @@
 				1711119018E1A86900383E8E /* background.png in Resources */,
 				1711117C18DC979900383E8E /* lists@2x.png in Resources */,
 				1711117318DC664A00383E8E /* pause.png in Resources */,
+				181787BD18ED4D550035B70C /* MusicInfoCell.xib in Resources */,
 				1711117818DC664A00383E8E /* sliderBack.png in Resources */,
 				1711117B18DC979900383E8E /* lists.png in Resources */,
 				182E641918DBC5E9006F6A3A /* Images.xcassets in Resources */,
@@ -381,6 +390,7 @@
 				1852474F18E2B491009AA2E9 /* UIImage+ImageEffects.m in Sources */,
 				1871B0F718EC0F6D0077E2BB /* MainListModel.m in Sources */,
 				1711118818E194F400383E8E /* TWTSideMenuViewController.m in Sources */,
+				181787BB18ED4D1B0035B70C /* MusicInfoCell.m in Sources */,
 				1852475018E2B491009AA2E9 /* UIImageView+LBBlurredImage.m in Sources */,
 				1711118E18E195C800383E8E /* MainViewController.m in Sources */,
 				182E641318DBC5E9006F6A3A /* main.m in Sources */,

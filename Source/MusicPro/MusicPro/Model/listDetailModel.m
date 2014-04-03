@@ -11,12 +11,17 @@
 @implementation listDetailModel
 
 - (id)initWithListName:(NSString *)name
-              andLevel:(NSString *)level
+          andSuperList:(listDetailModel *)superList
               andArray:(NSArray *)songNameList
 {
     if (self = [super init]) {
         //
-        self.level = level;
+        self.superList = superList;
+        if (superList == nil) {
+            self.level = 0;
+        }else{
+            self.level = 1;
+        }
         self.name = name;
         self.listNameArray = [NSMutableArray arrayWithArray:songNameList];
         self.isListShow = NO;
